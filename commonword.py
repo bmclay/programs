@@ -1,3 +1,5 @@
+# Use this to open a text file and print the most frequent used word in the file.
+
 # Get the name of the file and open it
 name = input('Enter file:')
 handle = open(name, 'r')
