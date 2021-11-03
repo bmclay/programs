@@ -26,7 +26,7 @@ if choice == '1':
 elif choice =='2' :
     print(random.choice(chinese))
 elif choice == '3' :
-    print(random.choice(american))
+     print(random.choice(american))
 elif choice == '4' :
     print(random.choice(italian))
 elif choice == '5' :
@@ -36,3 +36,4 @@ elif choice == '6' :
 else:
     print('Try again')
 
+# This program is under development. Edit to correct a user if they enter a wrong selection and continue.
