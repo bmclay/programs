@@ -31,7 +31,7 @@ while choice != 'q':
     print("[q] Enter q to quit.")
     
     # Ask for the user's choice.
-    choice = input("\nWhat would you like to do? ")
+    choice = input("\nWhat style would you like? ")
     
     # Respond to the user's choice.
     if choice == '1':
