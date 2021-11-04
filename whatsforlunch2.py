@@ -50,4 +50,4 @@ while choice != 'q':
         print('Invalid choice, Try again')
         
 # Print a message that we are all finished.
-print("Thanks again, bye now.")
+print("Enjoy your lunch!")
