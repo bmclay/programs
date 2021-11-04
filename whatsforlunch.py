@@ -34,6 +34,4 @@ elif choice == '5' :
 elif choice == '6' :
     print(random.choice(fastfood))
 else:
-    print('Try again')
-
-# This program is under development. Edit to correct a user if they enter a wrong selection and continue.
+    print('Invalid selection')
