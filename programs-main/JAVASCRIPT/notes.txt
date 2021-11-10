@@ -115,3 +115,159 @@ Strict inequality
 !==
 check for evyerthing about both variables tro be different
 
+Loose equality
+==
+doesnt compare data types. almost never use this.
+
+Its important to use strict equality and strict inequality more often than not
+loose will return unexpected results sometimes
+
+console.log(true == 1); //returns true... even though true and 1 are not the same data type.
+console.log("5" == 5); // returns true... even though "5" is a str and 5 is number
+
+Logical operators
+and &&   checks all operands are true and returns true or false.
+console.log(true && true && false); // returns false
+console.log(true && true && true); // returns true
+
+or ||    checks at least one operand is true, returns true if it is
+console.log(true || false); // returns true
+console.log(false || false); // returns false
+not !     reverses the boolean value
+
+console.log(!false);
+
+
+
+if statements
+Example of typical if statment in javascript
+const age = 28;
+
+if (age > 18) {
+    console.log('Adult');
+} else if (age === 18) {
+    console.log('Young adult');
+} else {
+    console.log('child');
+}
+
+loops
+for or while loops
+
+While loops
+
+while(condition) {
+    //code
+}
+
+example:
+let i = 0;
+
+while(i < 10) { // stay in the loop until i is 10 (10 iterations)
+    console.log(i);
+    i++; // increment i by one
+}
+
+For loops:
+for([initialization]; [condition]; [final expression]);
+initialization - to define and set up your loop variable
+condition  -  evaluated at the beginning of every loop iteration, and continues as long as it evaluates to true. When conditions to false the loop stops executing.
+final expression  -  executed at the end of each loop iteration, prior to the next condition check. used to increment or decrement a number.
+
+example:
+for(let i = 0; i < 10; 1++) {
+    console.log(i);
+}
+
+For loops are good for things that increment a small amount
+
+Dont write DRY code
+DONT. REAPEAT. YOURSELF.
+
+Functions
+a block of code designed to perform a particular task.
+console.log() is a builtin function of javascript that prints to the console.
+You can define functions and call functions in javascript also.
+function name(parameter) {
+    return code;
+}
+
+then call them later on when you need to use the function
+create a variable and use the console.log function to get its value
+const result = name(parameter);
+console.log(result)
+
+name  -  you can use anything that is not a javascript keyword.
+parameter  -   are values we will send to the function when we call it.
+return  -  every function needs it. specifies the value that will be returned by the function.
+
+Function declaration:
+example:
+function name(params) {
+    //statements
+    //have access to "this" keyword
+}
+
+Function expression:
+const name = function(params) {
+    //statements
+}
+
+Arrow function - the most modern way to declare a function in modern javascript
+const name = (params)
+const name = (params) => {
+    //statements
+}
+
+Invoking a function
+name();
+
+Example: 
+
+// Declare a function named sayHi and send Hi to the specified name.
+function sayHi(name) {
+    console.log(`Hi, ${name}`);
+}
+
+Call the function with multiple different names:
+sayHi('Bill');
+sayHi('Justin');
+sayHi('Aaron')
+
+Every function in javascript returns undefined unless otherwise specified
+function add(a, b) {
+    return a + b;
+}
+
+const sum = add(2, 2);
+
+console.log(sum);
+
+
+Arrow functions
+do not create their own "this" value
+
+**** This ****
+const square = (number) => {
+    return number * number;
+}
+
+const result = square(5);
+
+
+**** Is the same as ****
+const square = (number) => number * number;
+
+You can also declare it without parenthasis if there is only one parameter
+
+const square = number => number * number;
+
+You can call it -
+const result = square(10);
+
+console.log (result);
+
+
+
+
+Javascript output
