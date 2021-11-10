@@ -1,0 +1,117 @@
+variables 
+1. Variable names should be unique
+2. The name should not be any reserved keyword
+3. The name must start with a Character, _, &.
+var variable = 'variable value';
+
+3 ways to create a variable:
+var
+let - when you plan on changing the variable later on.
+const - constant. cant change the variable.
+
+
+let is the preferred method of creating variables in modern javascript.
+let variableName = 'Welcome to variables'; 
+
+To reassign the variable value:
+variableName = 'Hello!'; 
+
+const
+const is the method for assigning variables that never change.
+You cannot re declare the value of a const with the same name.
+
+You cannot declare a const, var or let by the name const, var or let.
+
+All variables must be named using the following scheme:
+first character needs to be a letter, underscore or a dollar sign.
+cannot use special characters within variable names either (only _ and $ is allowed)
+
+Comments:
+vscode allows you to press ctrl + / to comment out mult lines in vscode. you can highlite a block of code and use this to comment it all out.
+// basic single line comment
+
+/* multi
+line
+comment
+*/
+
+Console log
+console.log(); 
+Watch the console in the developer tools of the browser. If the code is broken you will not see the console, you will see an error.
+You can call variables this way, you can put 'strings of text' in the paranthesis.
+
+date    
+const date = new Date();
+console.log(date)
+Data types
+
+strings - typical strings of characters. Feilds of text. Must be surrounded by quotes.
+numbers - numbers, includinng onese with decimal values and negative. 
+booleans - true or false
+null - speccifies we have a place to store a value, but the value doesn't exist
+undefined - you dont have a variable or value
+object - important data type, the building block for modern javascript. complex data types.
+symbol - not so much used
+
+strings
+'single' and "double" quotes are not really any different
+`backticks` are used to provide extended functionality. 
+NaN
+not a number. Ofen returned when you try to perform mathmatical operations on strings with numbers.
+the data type of NaN is actually number!
+
+booleans
+true false normal boolean behaviour for logic. 
+true - yes, correct 1
+false - no, wrong, 0
+booleans are returned as a result of comparison operators.
+
+undefined
+javascript considers variables with no data value an undefined data type
+simply assigned like:
+let x;
+notice no value assigned
+
+null
+is the datatype of object. a bug in javascript. wont be fixed because if it is, a lot of code out in the world will break.
+
+object
+the only variable that can store more than one thing
+collection of data
+const person = {
+    name: 'John'
+    age: 25,
+}
+
+dot notation
+used to get only the specified element of the object specified.
+for example to get only the name of the person in the console:
+console.log(person.name);
+
+array
+ordered data collections
+const arr = [1, 2, 3, 4];
+when viewing arrays in the console, the index for each element in the array is displayed.
+
+javascript is dynamically typed: it can contain any datatype and be changed to any data type.
+some programming languages do not allow variable data to be changed to a different type (statically typed)
+
+comparison operators
+>
+<
+=
+>=
+<=
+== test if both are equal to eachother. loose equality.
+!= test if both are not equal to eachother
+always return a boolean value
+
+Strict equality
+===
+Compares both values and types to see if they are the same.
+5 is not strictly equal to "5". "5" is a string. 5 is a number.
+
+Strict inequality
+!==
+check for evyerthing about both variables tro be different
+
