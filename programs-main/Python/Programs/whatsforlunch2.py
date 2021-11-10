@@ -35,7 +35,7 @@ while choice != 'q':
     
     # Respond to the user's choice.
     
-    if choice == 'q' or 'Q':
+    if choice == 'q':
         print('Goodbye')
         break
     if choice == '1':
